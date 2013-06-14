@@ -1,19 +1,9 @@
-/*
- *
- * Template Name: Alissa
- * Template URI: http://azmind.com
- * Description: Alissa - Responsive Coming Soon Template
- * Author: Anli Zaimi
- * Author URI: http://azmind.com
- *
- */
-
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 body {
-    /*background: #f8f8f8 url("/teaser/app/assets/images/pattern.jpg");*/
-    background: #f8f8f8 url(<%= asset_path('/images/logo.png') %>);
+    background: #f8f8f8;
     text-align: left;
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: 'Lato', 'Nanum Gothic Coding';
     color: #555;
     font-weight: 400;
     border-top: 2px solid #e75967;
@@ -46,17 +36,17 @@ a:hover { text-decoration: none; }
 }
 .logo a:hover { color: #e75967; }
 
-.call-us {
+.call_us {
     font-size: 18px;
     text-align: right;
 }
 
-.call-us p {
+.call_us p {
     margin-top: 18px;
     padding-right: 50px;
 }
 
-.call-us p span { color: #888; }
+.call_us p span { color: #888; }
 
 
 /***** Coming Soon *****/
@@ -116,7 +106,6 @@ a:hover { text-decoration: none; }
 .timer .hours-wrapper:hover,
 .timer .minutes-wrapper:hover,
 .timer .seconds-wrapper:hover {
-    /*background: #e75967 url(/teaser/app/assets/images/pattern-2.png);*/
     background: #e75967 url(<%= asset_path('pattern-2.png') %>);
     text-shadow: none;
 }
@@ -192,7 +181,7 @@ a:hover { text-decoration: none; }
     padding: 0;
     background: #e75967;
     border: 0;
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: 'Lato', 'Nanum Gothic Coding', Arial, sans-serif;
     font-size: 18px;
     line-height: 46px;
     color: #fff;
@@ -220,14 +209,6 @@ a:hover { text-decoration: none; }
     color: #fff;
 }
 
-.success-message, .error-message {
-    font-size: 18px;
-}
-
-.error-message {
-    color: #e75967;
-}
-
 .social {
     margin-top: 30px;
     padding-bottom: 30px;
@@ -242,13 +223,6 @@ a:hover { text-decoration: none; }
 }
 
 .social a.facebook { background: url(<%= asset_path('social-icons/facebook.png')%>); }
-/*
-.social a.twitter { background: url(<%= asset_path('social-icons/twitter.png')%>); }
-.social a.dribbble { background: url(<%= asset_path('social-icons/dribbble.png')%>); }
-.social a.googleplus { background: url(<%= asset_path('social-icons/googleplus.png')%>); }
-.social a.pinterest { background: url(<%= asset_path('social-icons/pinterest.png')%>); }
-.social a.flickr { background: url(<%= asset_path('social-icons/flickr.png')%>); }
-*/
 
 /***** Media Queries *****/
 
@@ -258,7 +232,7 @@ a:hover { text-decoration: none; }
         padding-left: 0;
     }
 
-    .call-us p {
+    .call_us p {
         padding-right: 0;
     }
 
@@ -297,12 +271,12 @@ a:hover { text-decoration: none; }
         text-align: center;
     }
 
-    .call-us {
+    .call_us {
         padding-bottom: 7px;
         text-align: center;
     }
 
-    .call-us p {
+    .call_us p {
         padding-right: 0;
     }
 
