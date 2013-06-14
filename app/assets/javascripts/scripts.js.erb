@@ -34,6 +34,21 @@ jQuery(document).ready(function() {
         }
     });
 
+  /* Submit Email */
+
+  $("#enter_mail").click(function(){
+      $.ajax({
+        data:{
+        address: $("#email").val()
+        },
+      url: '/teaser/save_mail',
+      type:'POST',
+      success: function(){
+        alert("감사합니다. \n from.포텐카페지기");
+       }
+      });
+   });
+
 
 });
 
