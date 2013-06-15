@@ -12,7 +12,7 @@ class TeaserController < ApplicationController
     check=new_mail.save
 
     if check==false
-      render  :text => "이미 등록된 이메일입니다."
+      redirect_to  :action => 'errorpage', :alert => "이미 등록된 메일입니다." 
     else
       redirect_to :action => 'output', :id => new_mail.id
     end
@@ -20,6 +20,10 @@ class TeaserController < ApplicationController
 
   def output
     @number = params[:id]
-  
   end
+
+  def errorpage
+    @msg = params[:alert]
+  end
+
 end
