@@ -12,4 +12,8 @@ class TeaserController < ApplicationController
 
   render  :status => 200
   end
+
+  def output
+
+  end
 end
