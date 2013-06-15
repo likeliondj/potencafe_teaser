@@ -11,9 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130614153624) do
+ActiveRecord::Schema.define(:version => 20130615073608) do
 
-  create_table "mails", :force => true do |t|
+  create_table "contacts", :force => true do |t|
     t.string   "email",      :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

@@ -1,3 +1,4 @@
+#encoding:utf-8
 class TeaserController < ApplicationController
 
   def index
@@ -6,14 +7,19 @@ class TeaserController < ApplicationController
 
   def save_mail
 
-  new_mail = Mail.new
-  new_mail = params[:address]
-  new_mail.save
+    new_mail = Contact.new
+    new_mail.email = params[:email]
+    check=new_mail.save
 
-  render  :status => 200
+    if check==false
+      render  :text => "이미 등록된 이메일입니다."
+    else
+      redirect_to :action => 'output', :id => new_mail.id
+    end
   end
 
   def output
-
+    @number = params[:id]
+  
   end
 end
